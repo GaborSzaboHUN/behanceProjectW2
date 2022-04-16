@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body*{
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 0 5%;
+    background-color: #512614;
+}
+
+.image-container{
+    height: 80vh;
+    width: 100%;
+}
+
+.contact-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+    
+    background-color: rgba(0, 0, 255, 0.2);
+    
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+}
+.contact-line *{
+    display: inline-block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 25px;
+}
+
+.logo p{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.contact-line-right{
+    display: flex;
+    align-items: center;
+}
+
+.contact-line-right img:first-child{
+    height: 14px;
+    margin: 3px 10px 0 0;
+}
+
+.contact-line-right a{
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+}
+
+.contact-line-right ul{
+    margin: 0 45px;
+    padding: 0;
+}
+
+.contact-line-right li>a:first-child{
+    margin: 0 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.contact-line-right li>a:hover {
+    text-shadow: 0 0 10px #ffffff;
+}
+
+.contact-line-right li>a:focus{
+    color: #d66939;
+}
+
+.contact-line-right a>img:last-child{
+    margin: 0;
+    height: 15px;
+}
+
+.intro{
+    position: relative;
+
+    display: flex;
+    height: 70vh;
+}
+
+.social-media{
+    position: relative;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25px;
+    background-color: #34c43446;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 34%;
+}
+
+.social-media-icons a{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 25px;
+}
+
+.vertical-row{
+    position: relative;
+    left:10px;
+    height: 25%;
+    border-left: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    padding: 0 0 0 2%;
+    color: white;
+    background-color: rgba(200, 255, 0, 0.521);
+}
+
+.name{
+    font-size: 45px;
+}
+
+.introduction-text{
+    max-width: 35%;
+    min-width: 250px;
+    font-size: 12px;
+
+    line-height: 28px;
+}
+
+.hire-me{
+    max-width: 230px;
+    min-width: 10px;
+    margin-top: 25px;
+    padding: 10px 0;
+    border: 5px solid #d66939;
+    
+    background: transparent;
+    
+    color: #d66939;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    transition: .4s;
+    transition-delay: .15s;
+}
+
+.hire-me:hover{
+    color: white;
+    background-color: #d66939;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.arrow{
+    position: relative;
+    top: -100px;
+    text-align: center;
+    background-color: rgba(95, 158, 160, 0.282);
+}
+
+.arrow img{
+    height: 40px;
+}
+
+/* ------ What can do for you ------*/
+
+
