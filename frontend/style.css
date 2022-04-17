@@ -11,13 +11,23 @@ body*{
 /* ------ Header ------ */
 
 .header{
-    padding: 0 5%;
     background-color: #512614;
 }
 
 .image-container{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(214, 104, 57, 0.2)),
+    url(/frontend/img/annie-spratt-flipped.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+.header-container{
+    margin: 0 5%;
 }
 
 .contact-line{
@@ -26,9 +36,7 @@ body*{
     justify-content: space-between;
 
     height: 80px;
-    
-    background-color: rgba(0, 0, 255, 0.2);
-    
+        
     color: white;
     font-weight: 300;
     font-size: 12px;
@@ -65,6 +73,9 @@ body*{
     text-decoration: none;
     font-size: 11px;
     color: white;
+
+    transition: .4s;
+    transition-delay: .05s;
 }
 
 .contact-line-right ul{
@@ -72,13 +83,14 @@ body*{
     padding: 0;
 }
 
+.contact-line-right li>a:hover {
+    text-shadow: 0 0 10px #ffffff;
+}
+
 .contact-line-right li>a:first-child{
     margin: 0 5px;
     font-size: 12px;
     font-weight: 600;
-}
-.contact-line-right li>a:hover {
-    text-shadow: 0 0 10px #ffffff;
 }
 
 .contact-line-right li>a:focus{
@@ -94,7 +106,7 @@ body*{
     position: relative;
 
     display: flex;
-    height: 70vh;
+    height: 90vh;
 }
 
 .social-media{
@@ -104,7 +116,6 @@ body*{
     flex-direction: column;
     justify-content: center;
     width: 25px;
-    background-color: #34c43446;
 }
 
 .social-media-icons{
@@ -122,14 +133,21 @@ body*{
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 25px;
+    width: 100%;
+
+    transition: .4s;
+    transition-delay: .05s;
+}
+
+.social-media-icons a:hover{
+    filter: drop-shadow(0 0 10px #ffffff);
 }
 
 .vertical-row{
     position: relative;
     left:10px;
     height: 25%;
-    border-left: 4px solid rgba(255, 255, 255, 0.5);
+    border-left: 3px solid rgba(255, 255, 255, 0.25);
 }
 
 .introduction{
@@ -138,9 +156,8 @@ body*{
     justify-content: center;
 
     width: 100%;
-    padding: 0 0 0 2%;
+    padding: 0 0 0 5%;
     color: white;
-    background-color: rgba(200, 255, 0, 0.521);
 }
 
 .name{
@@ -151,14 +168,15 @@ body*{
     max-width: 35%;
     min-width: 250px;
     font-size: 12px;
+    letter-spacing: 1px;
 
-    line-height: 28px;
+    line-height: 32px;
 }
 
 .hire-me{
     max-width: 230px;
     min-width: 10px;
-    margin-top: 25px;
+    margin: 25px 0 130px;
     padding: 10px 0;
     border: 5px solid #d66939;
     
@@ -170,7 +188,7 @@ body*{
     letter-spacing: 2px;
 
     transition: .4s;
-    transition-delay: .15s;
+    transition-delay: .05s;
 }
 
 .hire-me:hover{
@@ -183,16 +201,25 @@ body*{
     position: relative;
     top: -80px;
     text-align: center;
-    background-color: rgba(95, 158, 160, 0.282);
 }
+
 
 .arrow img{
     height: 25px;
+    
+    transition: .4s;
+    transition-delay: .05s;
 }
+
+.arrow img:hover{
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+
 
 /* ------ What can do for you ------*/
 
-.title{
+#title-do-for-you{
     margin: 60px 0;
 
     text-align: center;
@@ -230,4 +257,21 @@ body*{
 .black-paragraph{
     font-weight: 300;
     font-size: 12px;
+}
+
+
+/* ------ My latest works ------*/
+
+.section-starter{
+    margin-right: 5%;
+}
+
+.hr{
+    border: 2px solid #d66939;
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 100px;
 }
