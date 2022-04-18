@@ -165,15 +165,18 @@ body*{
 }
 
 .introduction-text{
-    max-width: 35%;
-    min-width: 250px;
     font-size: 12px;
     letter-spacing: 1px;
+}
 
+.white{
+    max-width: 35%;
+    min-width: 250px;
+    
     line-height: 32px;
 }
 
-.hire-me{
+#hire-me{
     max-width: 230px;
     min-width: 10px;
     margin: 25px 0 130px;
@@ -191,7 +194,7 @@ body*{
     transition-delay: .05s;
 }
 
-.hire-me:hover{
+#hire-me:hover{
     color: white;
     background-color: #d66939;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -219,12 +222,14 @@ body*{
 
 /* ------ What can do for you ------*/
 
-#title-do-for-you{
-    margin: 60px 0;
-
-    text-align: center;
+.title{
     font-size: 20px;
     font-weight: 600;
+}
+
+#title-do-for-you{
+    margin: 60px 0;
+    text-align: center;
 }
 
 .do-for-you{
@@ -263,15 +268,208 @@ body*{
 /* ------ My latest works ------*/
 
 .section-starter{
-    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 50px 0;
 }
 
 .hr{
-    border: 2px solid #d66939;
+    height: 3px;
+    background-color: #d66939;
+}
+.hr-latest-work{
+    width: 60%;
 }
 
 .section-title{
+    margin: auto;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
-    padding: 0 100px;
+}
+
+.portfolio-container{
+    width: 100%;
+    height: 500px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#all-works{
+    position: relative;
+
+    max-width: 230px;
+    min-width: 10px;
+    
+    margin: 25px 0 80px;
+    border: none;
+    padding: 14px 25px;
+    
+    background-color: #d66939;
+    
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    
+    transition: .4s;
+    transition-delay: .05s;
+}
+
+#all-works:hover{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* ------ About me ------*/
+
+.grey-container{
+    display: flex;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.hr-about-me{
+    position: relative;
+    top: 60px;
+
+    height: 3px;
+    width: 8%;
+    background-color: #d66939;
+}
+
+.profile-image{
+    width: 380px;
+
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(214, 104, 57, 0.2)),
+    url(/frontend/img/jakob-owens-lkMJcGDZLVs-unsplash.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-me-container{
+    width: 400px;
+    min-width: 20%;
+    margin: 30px 0 60px 40px;
+}
+
+.title-about-me{
+    margin-bottom: 30px;
+}
+
+.black-paragraph li{
+    line-height: 20px;
+}
+
+
+
+/* ------ Video presentation ------*/
+
+.video-placeholder{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 80px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* ------ Pricing ------*/
+
+
+
+/* ------ Send a message ------*/
+
+.image-container-message{
+    width: 100%;
+    height: 63vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(105, 50, 27, 0.5)),
+    url(/frontend/img/etienne-bosiger-OWsdJ-MllYA-unsplash.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.white-section{
+    margin: 0;
+    padding: 50px 0;
+    color: white;
+}
+
+.form-container{
+    align-items: center;
+    width: 400px;
+    margin: auto;
+}
+
+.input-box{
+    box-sizing: border-box;
+    display: block;
+
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0;
+
+    width: 100%;
+}
+
+.input-box::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.input-box:focus-visible{
+    outline: none;
+    border: 2px solid #d66939;
+    border-radius: 5px;
+}
+
+.email{
+    height: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 15px;
+}
+
+#comment{
+    height: 120px;
+    resize: none;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 15px;
+}
+
+#send-message{
+    width: 100%;
+    height: 60px;
+
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: #d66939;
+
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;    
+}
+
+#send-message:hover{
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
