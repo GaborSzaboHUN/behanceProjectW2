@@ -176,7 +176,7 @@ body*{
     line-height: 32px;
 }
 
-#hire-me{
+.button-transparent{
     width: 230px;
     min-width: 10px;
     margin: 25px 0 130px;
@@ -194,7 +194,7 @@ body*{
     transition-delay: .05s;
 }
 
-#hire-me:hover{
+.button-transparent:hover{
     color: white;
     background-color: #d66939;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
@@ -288,7 +288,7 @@ body*{
     margin: auto;
     text-align: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .portfolio-container{
@@ -384,6 +384,79 @@ body*{
 
 /* ------ Pricing ------*/
 
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 80px;
+}
+
+.pricing-grey{
+    padding: 40px 50px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    transition: .4s;
+    transition-delay: .05s;
+}
+
+.pricing-grey:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.package-name{
+    margin: 0;
+
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .75px;
+}
+
+.price{
+    margin: 12px 0;
+
+    color: #d66939;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: .75px;
+}
+
+.pricing-grey > p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.checkpoint-pairs{
+    display: flex;
+    align-items: center;
+}
+
+.checkpoint-pairs img{
+    display: inline-block;
+    margin-right: 10px;
+    height: 15px;
+}
+
+.checkpoint-pairs p{
+    display: inline-block;
+
+    margin: 8px 0;
+
+    font-weight: 300;
+    font-size: 11px;
+}
+
+#buy-now{
+    width: 100%;
+    border: 2px solid #d66939;
+    font-size: 14px;
+    margin-bottom: 0;
+}
 
 
 /* ------ Send a message ------*/
@@ -556,6 +629,6 @@ body*{
     font-size: 11px;
 }
 
-.footer-bg #hire-me{
+.footer-bg .button-transparent{
     margin: 0;
 }
