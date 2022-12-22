@@ -23,7 +23,7 @@ body* {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(90deg, rgb(0, 0, 0), rgba(214, 104, 57, 0.2)),
-        url(/img/annie-spratt-flipped.jpg);
+        url("image/annie-spratt-flipped.jpg");
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -471,7 +471,7 @@ footer>a:hover {
     width: 380px;
 
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(214, 104, 57, 0.2)),
-        url(/img/jakob-owens-lkMJcGDZLVs-unsplash.jpg);
+        url(image/jakob-owens-lkMJcGDZLVs-unsplash.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -619,7 +619,7 @@ footer>a:hover {
     font-size: 11px;
 }
 
-#buy-now {
+.buy-now {
     width: 100%;
     border: 2px solid #d66939;
     font-size: 14px;
@@ -633,7 +633,7 @@ footer>a:hover {
     width: 100%;
 
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(214, 104, 57, 0.3)),
-        url(/img/etienne-bosiger-OWsdJ-MllYA-unsplash.jpg);
+        url(image/etienne-bosiger-OWsdJ-MllYA-unsplash.jpg);
 
     background-size: cover;
     background-repeat: no-repeat;
